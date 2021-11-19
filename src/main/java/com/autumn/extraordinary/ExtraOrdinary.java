@@ -1,5 +1,6 @@
 package com.autumn.extraordinary;
 
+import com.autumn.extraordinary.block.ModBlocks;
 import com.autumn.extraordinary.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -28,14 +29,15 @@ public class ExtraOrdinary
     public static final String MOD_ID = "extraordinary";
 
     public ExtraOrdinary() {
-        // Register the setup method for modloading
+
         IEventBus eventbus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventbus);
-        
+        ModBlocks.register(eventbus);
+
         eventbus.addListener(this::setup);
 
-        // Register ourselves for server and other game events we are interested in
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 

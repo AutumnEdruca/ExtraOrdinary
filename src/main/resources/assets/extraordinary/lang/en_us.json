@@ -1,4 +1,6 @@
 {
-    "item.extraordinary.teal_ingot" : "Teal Ingot"
+    "item.extraordinary.teal_ingot" : "Teal Ingot",
+    "block.extraordinary.pip_bricks" : "Pip Bricks",
+    "itemGroup.extraordinaryModTab" : "Extra, Ordinary!"
 
 }

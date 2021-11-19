@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ExtraOrdinary.MOD_ID);
 
     public static final RegistryObject<Item> TEAL_INGOT = ITEMS.register("teal_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ExtraOrdinary)));
 
 
     public static void register(IEventBus eventBus) {
