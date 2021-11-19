@@ -1,0 +1,41 @@
+modLoader="javafml" 
+loaderVersion="[37,)"  
+license="MIT"
+[[mods]] 
+modId="extraordinary" 
+version="0.1"
+displayName="Extra, Ordinary"
+logoFile="extraordinary.png"
+credits="A Burger Flipping Guy for being my rubber ducky"
+authors="Autumn Edruca"
+description='''   '''
+
+
+
+
+
+
+
+
+
+
+
+[[dependencies.extraordinary]]
+    # the modid of the dependency
+    modId="forge" 
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true 
+    # The version range of the dependency
+    versionRange="[37,)" 
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.extraordinary]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"
