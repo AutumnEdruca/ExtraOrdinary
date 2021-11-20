@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#_#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "extraordinary:zombie_heart"
+        },
+        "_": {
+            "item": "extraordinary:glass_jar"
+        }
+    },
+    "result": {
+        "item": "extraordinary:heart_jar"
+    }
+}

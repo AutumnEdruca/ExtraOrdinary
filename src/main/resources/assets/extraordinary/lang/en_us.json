@@ -1,5 +1,11 @@
 {
     "item.extraordinary.teal_ingot" : "Teal Ingot",
+    "item.extraordinary.zombie_heart" : "Zombie Heart",
+    "item.extraordinary.cooked_zombie_heart" : "Cooked Zombie Heart",
+    "item.extraordinary.heart_jar" : "Jar of Hearts",
+    "item.extraordinary.glass_jar" : "Glass Jar",
+    "item.extraordinary.soul_staff" : "Soultouched Staff",
+
     "block.extraordinary.pip_bricks" : "Pip Bricks",
     "itemGroup.extraordinaryModTab" : "Extra, Ordinary!"
 

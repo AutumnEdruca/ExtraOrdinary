@@ -7,6 +7,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,7 +23,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ExtraOrdinary.MOD_ID);
 
     public static final RegistryObject<Block> PIP_BRICKS = registerBlock("pip_bricks",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(12f)));
+            ()-> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(12f)));
+    public static final RegistryObject<Block> HUSK_CROP = registerBlock("husk_crop",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.WHEAT).instabreak().noCollission().sound(SoundType.CROP)));
 
 
 
