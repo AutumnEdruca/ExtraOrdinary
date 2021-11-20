@@ -16,6 +16,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> TEAL_INGOT = ITEMS.register("teal_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ExtraOrdinary)));
+    public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard",
+            () -> new Item(new Item.Properties().stacksTo(16).tab(ModCreativeModeTab.ExtraOrdinary)));
+    public static final RegistryObject<Item> CRYSTAL_STICK = ITEMS.register("crystal_stick",
+            () -> new Item(new Item.Properties().stacksTo(16).tab(ModCreativeModeTab.ExtraOrdinary)));
+    public static final RegistryObject<Item> CRYSTAL_PICKAXE = ITEMS.register("crystal_pickaxe",
+            () -> new Item(new Item.Properties().durability(10).tab(ModCreativeModeTab.ExtraOrdinary)));
+
     public static final RegistryObject<Item> ZOMBIE_HEART = ITEMS.register("zombie_heart",
             ()-> new Item(new Item.Properties().food(ModFoods.ZOMBIE_HEART).tab(ModCreativeModeTab.ExtraOrdinary)));
     public static final RegistryObject<Item> COOKED_ZOMBIE_HEART = ITEMS.register("cooked_zombie_heart",

@@ -2,6 +2,8 @@ package com.autumn.extraordinary.block.crops;
 
 import com.autumn.extraordinary.block.ModBlocks;
 import com.autumn.extraordinary.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -10,8 +12,11 @@ import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.client.RenderProperties;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 
 public class HuskCrop extends CropBlock {
+
 
     public HuskCrop(Properties p_52247_) {
         super(p_52247_);
@@ -30,6 +35,7 @@ public class HuskCrop extends CropBlock {
     @Override
     protected ItemLike getBaseSeedId() {
         return ModBlocks.HUSK_CROP.get();}
+
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {

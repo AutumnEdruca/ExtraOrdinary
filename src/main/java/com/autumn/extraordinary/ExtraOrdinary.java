@@ -2,7 +2,12 @@ package com.autumn.extraordinary;
 
 import com.autumn.extraordinary.block.ModBlocks;
 import com.autumn.extraordinary.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderStateShard;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraftforge.client.RenderProperties;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -33,11 +38,14 @@ public class ExtraOrdinary
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
+    private void setup(final FMLCommonSetupEvent event) {
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.HUSK_CROP.get(), RenderType.cutout());
+
+
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
 
     }
 

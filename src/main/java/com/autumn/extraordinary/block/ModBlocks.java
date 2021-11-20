@@ -1,6 +1,7 @@
 package com.autumn.extraordinary.block;
 
 import com.autumn.extraordinary.ExtraOrdinary;
+import com.autumn.extraordinary.block.crops.HuskCrop;
 import com.autumn.extraordinary.item.ModCreativeModeTab;
 import com.autumn.extraordinary.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,7 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PIP_BRICKS = registerBlock("pip_bricks",
             ()-> new Block(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(12f)));
     public static final RegistryObject<Block> HUSK_CROP = registerBlock("husk_crop",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.WHEAT).instabreak().noCollission().sound(SoundType.CROP)));
+            ()-> new HuskCrop(BlockBehaviour.Properties.copy(Blocks.WHEAT).instabreak().noCollission().sound(SoundType.CROP)));
 
 
 
