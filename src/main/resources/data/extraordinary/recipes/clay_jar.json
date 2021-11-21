@@ -1,0 +1,36 @@
+ {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:heart_jar"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        },
+        {
+            "item": "extraordinary:special_clay"
+        }
+    ],
+    "result": {
+        "item": "extraordinary:clay_jar",
+        "count": 1
+    }
+}

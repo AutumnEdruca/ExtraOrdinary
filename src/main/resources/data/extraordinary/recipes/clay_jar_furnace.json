@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "extraordinary:clay_jar"
+    },
+    "result": "extraordinary:crystal_shard",
+    "experience": 5,
+    "cookingtime": 200
+}
